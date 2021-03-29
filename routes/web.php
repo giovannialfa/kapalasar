@@ -31,10 +31,12 @@ Route::get('/voucher', function () {
 });
 
 // Merchant
-Route::get('/merchant-index', function () {
-    return view('merchant.index');
+Route::get('/merchant-home', function () {
+    return view('merchant.home');
 });
-
+Route::get('/merchant-signup', function() {
+    return view('merchant.signup');
+});
 //Super Admin
 Route::get('/super-index', function () {
     return view('superAdmin.index');

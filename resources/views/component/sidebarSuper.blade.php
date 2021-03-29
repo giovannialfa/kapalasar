@@ -13,7 +13,7 @@
                 Dashboard
             </div>
         </div>
-        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="productPage()" style="cursor: pointer;" id="sidebar_menu">
+        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="adminPage()" style="cursor: pointer;" id="sidebar_menu">
             <div class="col-md-3">
                 <img src="{{ asset('image/admin.png') }}" alt="">
             </div>
@@ -21,7 +21,7 @@
                 Admin
             </div>
         </div>
-        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="voucherPage();" style="cursor: pointer;" id="sidebar_menu">
+        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="merchantPage();" style="cursor: pointer;" id="sidebar_menu">
             <div class="col-md-3">
                 <img src="{{ asset('image/merchant.png') }}" alt="">
             </div>
@@ -29,7 +29,7 @@
                 Merchant
             </div>
         </div>
-        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="voucherPage();" style="cursor: pointer;" id="sidebar_menu">
+        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="userPage();" style="cursor: pointer;" id="sidebar_menu">
             <div class="col-md-3">
                 <img src="{{ asset('image/user.png') }}" alt="">
             </div>
@@ -37,7 +37,7 @@
                 User
             </div>
         </div>
-        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="voucherPage();" style="cursor: pointer;" id="sidebar_menu">
+        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="productPage();" style="cursor: pointer;" id="sidebar_menu">
             <div class="col-md-3">
                 <img src="{{ asset('image/product.png') }}" alt="">
             </div>
@@ -57,13 +57,22 @@
 </div>
 
 <script>
-    function homePage(){
-        window.location.href = "{{ URL::to('home') }}";
+     function homePage(){
+        window.location.href = "{{ URL::to('super-index') }}";
     }
-    function productPage(){
-        window.location.href = "{{ URL::to('produk') }}";
+     function adminPage(){
+        window.location.href = "{{ URL::to('super-admin') }}";
     }
-    function voucherPage(){
-        window.location.href = "{{ URL::to('voucher') }}";
+     function merchantPage(){
+        window.location.href = "{{ URL::to('super-merchant') }}";
+    }
+     function userPage(){
+        window.location.href = "{{ URL::to('super-user') }}";
+    }
+     function productPage(){
+        window.location.href = "{{ URL::to('super-produk') }}";
+    }
+     function voucherPage(){
+        window.location.href = "{{ URL::to('super-voucher') }}";
     }
 </script>

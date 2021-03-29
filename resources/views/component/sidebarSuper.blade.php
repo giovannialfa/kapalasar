@@ -15,6 +15,30 @@
         </div>
         <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="productPage()" style="cursor: pointer;" id="sidebar_menu">
             <div class="col-md-3">
+                <img src="{{ asset('image/admin.png') }}" alt="">
+            </div>
+            <div class="col-md-5 sidebar-text">
+                Admin
+            </div>
+        </div>
+        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="voucherPage();" style="cursor: pointer;" id="sidebar_menu">
+            <div class="col-md-3">
+                <img src="{{ asset('image/merchant.png') }}" alt="">
+            </div>
+            <div class="col-md-5 sidebar-text">
+                Merchant
+            </div>
+        </div>
+        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="voucherPage();" style="cursor: pointer;" id="sidebar_menu">
+            <div class="col-md-3">
+                <img src="{{ asset('image/user.png') }}" alt="">
+            </div>
+            <div class="col-md-5 sidebar-text">
+                User
+            </div>
+        </div>
+        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="voucherPage();" style="cursor: pointer;" id="sidebar_menu">
+            <div class="col-md-3">
                 <img src="{{ asset('image/product.png') }}" alt="">
             </div>
             <div class="col-md-5 sidebar-text">

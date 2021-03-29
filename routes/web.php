@@ -19,12 +19,39 @@ Route::get('/', function () {
 
 Auth::routes();
 
+// Admin
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/produk', function () {
-    return view('product');
+    return view('admin.product');
 });
 
 Route::get('/voucher', function () {
-    return view('voucher');
+    return view('admin.voucher');
+});
+
+// Merchant
+Route::get('/merchant-index', function () {
+    return view('merchant.index');
+});
+
+//Super Admin
+Route::get('/super-index', function () {
+    return view('superAdmin.index');
+});
+
+Route::get('/super-admin', function() {
+    return view('superAdmin.admin');
+});
+Route::get('/super-merchant', function() {
+    return view('superAdmin.merchant');
+});
+Route::get('/super-user', function() {
+    return view('superAdmin.user');
+});
+Route::get('/super-produk', function() {
+    return view('superAdmin.product');
+});
+Route::get('/super-voucher', function() {
+    return view('superAdmin.voucher');
 });

@@ -37,6 +37,12 @@ Route::get('/merchant-home', function () {
 Route::get('/merchant-signup', function() {
     return view('merchant.signup');
 });
+Route::get('/merchant-signin', function() {
+    return view('merchant.signin');
+});
+Route::get('/merchant-dashboard', function () {
+    return view('merchant.dashboard');
+});
 //Super Admin
 Route::get('/super-index', function () {
     return view('superAdmin.index');

@@ -292,3 +292,46 @@ div {
     border-radius: 5px;
     height: 35px;
 }
+
+.title-signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 49px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+.btn-signin {
+    background: #a6cb26;
+    border-radius: 5px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    color: #ffffff;
+}
+
+.btn-signup {
+    background: #ffffff;
+    border: 1px solid #a6cb26;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    color: #a6cb26;
+}

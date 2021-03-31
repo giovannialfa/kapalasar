@@ -41,6 +41,7 @@
                                     <th scope="col" class="headTable">Nomor Telepon</th>
                                     <th scope="col" class="headTable">Password</th>
                                     <th scope="col" class="headTable"></th>
+                                    <th scope="col" class="headTable"></th>
                                 </tr>
                             </thead>
                             <tbody id="table-content">
@@ -52,6 +53,9 @@
                                     <td></td>
                                     <td></td>
                                     <td>
+                                        <button class="button" data-toggle="modal" data-target="#deleteAdmin">Delete</button>
+                                    </td>
+                                    <td>
                                         <button class="button" data-toggle="modal" data-target="#updateAdmin">Update</button>
                                     </td>
                                 </tr>
@@ -59,6 +63,7 @@
                         </table>
                         
                     </div>
+                    @include('../superAdmin.deleteAdmin')
                 </div>
                 
                 @include('../superAdmin.addAdmin')

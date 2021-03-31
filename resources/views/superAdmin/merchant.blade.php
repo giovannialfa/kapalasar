@@ -41,6 +41,7 @@
                                     <th scope="col" class="headTable">Alamat</th>
                                     <th scope="col" class="headTable">Nomor Telepon</th>
                                     <th scope="col" class="headTable"></th>
+                                    <th scope="col" class="headTable"></th>
                                 </tr>
                             </thead>
                             <tbody id="table-content">
@@ -52,6 +53,10 @@
                                     <td></td>
                                     <td></td>
                                     <td>
+                                    <button class="button" data-toggle="modal" data-target="#deleteMerchant">Update</button>
+   
+                                    </td>
+                                    <td>
                                         <button class="button" data-toggle="modal" data-target="#updateMerchant">Update</button>
                                     </td>
                                 </tr>
@@ -59,6 +64,8 @@
                         </table>
                         
                     </div>
+                    
+                @include('../superAdmin.deleteMerchant')
                 </div>
                 
                 @include('../superAdmin.addMerchant')

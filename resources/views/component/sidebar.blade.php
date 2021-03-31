@@ -1,40 +1,30 @@
-<div class="d-flex flex-column white-bg pl-4 pr-4 sidebar-row " style="height: calc(100vh);">
-    <div class="d-flex flex-column" style="height:100vh;">
-        <div class="row pl-2 pr-2 pb-3 mt-3">
-            <div class="header-part white-bg pb-5 pl-4 pr-5 pt-2 ">
-                <img src="{{ asset('image/homeDashboard.png') }}" onclick="homePage()" style="cursor: pointer;" alt="" height="25rem" class="logoKapalasar">
-            </div>
-        </div>
-        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="homePage()" style="cursor: pointer;" id="sidebar_menu">
-            <div class="col-md-3">
-                <img src="{{ asset('image/home-page.png') }}" alt="">
-            </div>
-            <div class="col-md-5 sidebar-text">
-                Dashboard
-            </div>
-        </div>
-        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="productPage()" style="cursor: pointer;" id="sidebar_menu">
-            <div class="col-md-3">
-                <img src="{{ asset('image/product.png') }}" alt="">
-            </div>
-            <div class="col-md-5 sidebar-text">
-                Produk
-            </div>
-        </div>
-        <div class="row pl-2 pr-2 pt-3 pb-3 mt-3 d-flex justify-content-center align-items-center" onclick="voucherPage();" style="cursor: pointer;" id="sidebar_menu">
-            <div class="col-md-3">
-                <img src="{{ asset('image/voucher.png') }}" alt="">
-            </div>
-            <div class="col-md-5 sidebar-text">
-                Voucher
-            </div>
-        </div>
-    </div>
+<div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+
+<ul class="c-sidebar-nav">
+    <li class="c-sidebar-nav-item mb-5"><a class="c-sidebar-nav-link" style="cursor: pointer;" onclick="homePage()"></a>
+    <img src="{{ asset('image/homeDashboard.png') }}" style="cursor: pointer;" onclick="homePage()" style="cursor: pointer;" alt="" class="logoKapalasar">
+    </li>
+    <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link"  style="cursor: pointer;" onclick="homePage()">
+    <img src="{{ asset('image/home-page.png') }}" class="mr-1" alt=""> Dashboard</a>
+    </li>
+        <li class="c-sidebar-nav-item">
+            <a class="c-sidebar-nav-link" style="cursor: pointer;" onclick="productPage()">
+            <img src="{{ asset('image/product.png') }}"class="mr-1" alt=""> Produk
+            </a>
+        </li>
+        <li class="c-sidebar-nav-item">
+            <a class="c-sidebar-nav-link" style="cursor: pointer;" onclick="voucherPage();">
+            <img src="{{ asset('image/voucher.png') }}"class="mr-1" alt=""> Voucher
+            </a>
+        </li>
+</ul>
+<button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
 </div>
 
 <script>
-    function homePage(){
-        window.location.href = "{{ URL::to('home') }}";
+   
+   function homePage(){
+        window.location.href = "{{ URL::to('/home') }}";
     }
     function productPage(){
         window.location.href = "{{ URL::to('produk') }}";

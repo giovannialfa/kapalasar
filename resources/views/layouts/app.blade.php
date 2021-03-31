@@ -33,15 +33,17 @@
     <link href="{{ asset( 'css/chart.css' ) }}" rel="stylesheet">
     <link href="{{ asset( 'css/owl.carousel.min.css' ) }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6db64e772e.js" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
     <!-- chart -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
 
+    <!-- coreUI -->
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
     
 </head>
 <script src="https://unpkg.com/feather-icons"></script>
 <body>
-    <div id="app">
+    <div class="c-app">
         <main style="height: 100%;">
             @yield('content')
         </main>
@@ -59,5 +61,14 @@
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+
+<!-- coreUI -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
 </body>
 </html>

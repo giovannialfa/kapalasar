@@ -1,18 +1,105 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="cover-container d-flex justify-content-start mx-auto">
-    <div class="" style="flex: 2;">
         @include('../component.sidebar')
+            @include('../component.header')
+            <div class="c-body mt-2">
+                <div class="container-fluid">
+                    <div class="fade-in">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="title-content mb-3">Riwayat Transaksi</div>
+                                        <!-- <div class="row">
+                                        <div class="col">
+                                            Pencarian
+                                            <form class="form-inline md-form form-sm mt-0 " style="width: 30vh; height:5vh" >        
+                                                <i class="fas fa-search" aria-hidden="true"></i>
+                                                <input class="form-control form-control-sm ml-3 " id="input-search" type="text" placeholder="Cari berdasarkan id, nama, dll" aria-label="Search" >
+                                            </form>   
+                                        </div>
+                                        <div class="col ">
+                                            Filter Waktu
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" style="width: 30vh; height:5vh">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            Filter Berdasarkan
+                                            <select name="" id="filterDashboard" style="width: 30vh; height:5vh">
+                                                <option value="">asdas</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            Urut Berdasarkan
+                                            <select name="" id="sortBy" style="width: 30vh; height:5vh">
+                                                <option value="">aaa</option>
+                                            </select>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <table class="table table-responsive-sm table-striped mydatatable ml-1 mr-1">
+                                <div class="card-body">
+                                    <thead>
+                                        <tr>
+                                            <th>Id Transaksi</th>
+                                            <th>Tanggal</th>
+                                            <th>Nama Pembeli</th>
+                                            <th>Alamat Pembeli</th>
+                                            <th>Merchant</th>
+                                            <th>Total Harga</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Yiorgos Avraamu</td>
+                                            <td>2012/01/01</td>
+                                            <td>Member</td>
+                                            <td>Jl. Raya Bandung Sumedang KM.21, Hegarmanah, Jatinangor, Kabupaten Sumedang, Jawa Barat 45363</td>
+                                            <td>Member</td>
+                                            <td>Member</td>
+                                            <td>
+                                                <button class="button badge badge-success" data-toggle="modal" data-target="#detailModal"
+                                                style="background: #A6CB26;"
+                                                >Detail</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gio</td>
+                                            <td>2012/01/01</td>
+                                            <td>Member</td>
+                                            <td>Jl. Raya Bandung Sumedang KM.21, Hegarmanah, Jatinangor, Kabupaten Sumedang, Jawa Barat 45363</td>
+                                            <td>Member</td>
+                                            <td>Member</td>
+                                            <td>
+                                                <button class="button badge badge-success" data-toggle="modal" data-target="#detailModal"
+                                                style="background: #A6CB26;"
+                                                >Detail</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        @include('../admin.detailTransaksi')<div id="container"></div>
+                    <figure class="highcharts-figure">
+                        <p class="highcharts-description">
+                           
+                        </p>
+                    </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="" style="flex: 10;">
-        <div class="d-flex flex-column">
-            @include('../component.header', ['header_title' => 'Dashboard'])
-            <div class="d-flex justify-content-between ml-4 mt-3">
-                <div class="mr-3" style="flex: 8;border-radius: 1em;">
+    <!-- <div class="d-flex justify-content-between ml-4 mt-3">
+    <div class="mr-3" style="flex: 8;border-radius: 1em;">
                     <div class="d-flex flex-column white-bg p-3" style="box-shadow: 0px 2px 15px rgba(221, 221, 221, 0.15);">
                         <div class="title-content mb-3">Riwayat Transaksi</div>
-                        <!-- <input class="form-control" id="input-search" type="text" placeholder="Cari berdasarkan id, nama, dll"> -->
                         <div class="row">
                             <div class="col">
                                 Pencarian
@@ -77,10 +164,7 @@
                         </p>
                     </figure>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
+            </div> -->
 <script>
     const chart = Highcharts.chart('container', {
     title: {
@@ -108,14 +192,9 @@
 
 </script>
 <script>
-$(document).ready(function(){
-  $("#input-search").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#table-content tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
+$(document).ready( function () {
+    $('.mydatatable').DataTable();
+} );
 </script>
 
 @endsection

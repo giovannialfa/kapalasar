@@ -70,12 +70,45 @@
                         </table>
                         @include('../admin.detailTransaksi')
                     </div>
+                    <div id="container"></div>
+                    </div>
+                    <figure class="highcharts-figure">
+                        <p class="highcharts-description">
+                           
+                        </p>
+                    </figure>
                 </div>
                 
             </div>
         </div>
     </div>
 </div>
+<script>
+    const chart = Highcharts.chart('container', {
+    title: {
+        text: 'Grafik Transaksi'
+    },
+    yAxis:{
+        title:{
+            text: 'Penjualan'
+        }
+    },
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        title:{
+            text: 'bulan'
+        }
+    },
+    series: [{
+        type: 'column',
+        colorByPoint: true,
+        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+        showInLegend: false
+    }]
+});
+
+
+</script>
 <script>
 $(document).ready(function(){
   $("#input-search").on("keyup", function() {

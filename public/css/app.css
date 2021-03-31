@@ -31,6 +31,28 @@
     color: #a6cb26;
 }
 
+.page-title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    color: #a6cb26;
+}
+
+.title-content {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    color: #54595f;
+}
+
 .masukDashboard {
     display: flex;
     justify-content: center;
@@ -334,4 +356,27 @@ div {
     /* identical to box height */
 
     color: #a6cb26;
+}
+
+.btn-primary {
+    background: #a6cb26;
+    border-radius: 5px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #ffffff;
+}
+
+.btn-secondary {
+    border-radius: 5px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #ffffff;
 }

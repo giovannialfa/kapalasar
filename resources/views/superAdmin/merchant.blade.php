@@ -7,7 +7,7 @@
     </div>
     <div class="" style="flex: 10;">
         <div class="d-flex flex-column">
-            @include('../component.header', ['header_title' => 'Dashboard'])
+            @include('../component.header', ['header_title' => 'Merchant'])
             <div class="d-flex justify-content-between ml-4 mt-3">
                 <div class="mr-3" style="flex: 8;border-radius: 1em;">
                     <div class="d-flex flex-column white-bg p-3" style="box-shadow: 0px 2px 15px rgba(221, 221, 221, 0.15);">

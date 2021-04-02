@@ -22,17 +22,17 @@
         <form>
   <div class="form-group">
     <label class="label-add" for="exampleFormControlInput1">Nama Produk</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Deskripsi Produk</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Kategori Produk</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Stok</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Harga</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Potongan Harga</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Flash Sale</label>
   </div>
   <div class="form-check">

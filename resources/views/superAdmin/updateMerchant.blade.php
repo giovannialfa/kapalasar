@@ -15,21 +15,21 @@
         <form>
   <div class="form-group">
     <label class="label-add" for="exampleFormControlInput1">Nama</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Email</label>
     <input type="email" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Password</label>
     <input type="password" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Tanggal Lahir</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Nomor Telepon</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Alamat</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Daerah</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Jenis usaha</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <p>Foto KTP</p>
     <button class="mt-1" style="background: #C4C4C4;border-radius: 5px;width: 149px;height: 35px;">Upload</button>
     <p>Foto Toko</p>

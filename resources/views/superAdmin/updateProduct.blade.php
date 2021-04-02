@@ -5,7 +5,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header" style="background: #A6CB26;">
-        <h5 class="modal-title" id="exampleModalLongTitle">update Produk</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">i Produk</h5>
         <button type="button" class="close modal-title" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -22,17 +22,17 @@
         <form>
   <div class="form-group">
     <label class="label-add" for="exampleFormControlInput1">Nama Produk</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Deskripsi Produk</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Kategori Produk</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Stok</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Harga</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Potongan Harga</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Flash Sale</label>
   </div>
   <div class="form-check">

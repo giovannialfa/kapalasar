@@ -39,7 +39,7 @@
                                         </div>
                                     </div> -->
                                 </div>
-                                <table class="table table-responsive-sm table-striped mydatatable ml-4 mr-4 ">
+                                <table class="table table-responsive-sm table-striped mydatatable p-4">
                                     <thead>
                                         <tr>
                                             <th>Id Transaksi</th>

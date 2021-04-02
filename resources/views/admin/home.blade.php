@@ -9,8 +9,8 @@
                         <div class="row">
                             <div class="col">
                                 <div class="card">
-                                    <div class="card-header">
-                                        <div class="title-content mb-3">Riwayat Transaksi</div>
+                                    <div class="card-header mb-3">
+                                        <div class="title-content">Riwayat Transaksi</div>
                                         
                                 </div>
                                 <div class="mb-3">

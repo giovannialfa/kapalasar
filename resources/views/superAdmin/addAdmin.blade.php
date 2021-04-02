@@ -15,13 +15,13 @@
         <form>
   <div class="form-group">
     <label class="label-add" for="exampleFormControlInput1">Nama</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Email</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Alamat</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Nomor Telepon</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
+    <input type="name" class="form-control" id="exampleFormControlInput1">
     <label class="label-add" for="exampleFormControlInput1">Password</label>
     <input type="password" class="form-control" id="exampleFormControlInput1">
   </div>

@@ -1,24 +1,24 @@
-<div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+<div class="c-sidebar c-sidebar-fixed c-sidebar-lg-show" id="sidebar" style="background: #FFFFFF;">
 
 <ul class="c-sidebar-nav">
-    <li class="c-sidebar-nav-item mb-5"><a class="c-sidebar-nav-link" style="cursor: pointer;" onclick="homePage()"></a>
-    <img src="{{ asset('image/homeDashboard.png') }}" style="cursor: pointer;" onclick="homePage()" style="cursor: pointer;" alt="" class="logoKapalasar">
+    <li class="c-sidebar-nav-item mb-5">
+        <a class="c-sidebar-nav-link" style="cursor: pointer;background: #FFFFFF;" onclick="homePage()"></a>
+    <img src="{{ asset('image/homeDashboard.png') }}" style="cursor: pointer;" onclick="homePage()"  alt="" class="logoKapalasar">
     </li>
-    <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link"  style="cursor: pointer;" onclick="homePage()">
+    <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link"  style="cursor: pointer;color: #54595f;background: #FFFFFF; " onclick="homePage()">
     <img src="{{ asset('image/home-page.png') }}" class="mr-1" alt=""> Dashboard</a>
     </li>
         <li class="c-sidebar-nav-item">
-            <a class="c-sidebar-nav-link" style="cursor: pointer;" onclick="productPage()">
+            <a class="c-sidebar-nav-link" style="cursor: pointer;color: #54595f;background: #FFFFFF; " onclick="productPage()">
             <img src="{{ asset('image/product.png') }}"class="mr-1" alt=""> Produk
             </a>
         </li>
         <li class="c-sidebar-nav-item">
-            <a class="c-sidebar-nav-link" style="cursor: pointer;" onclick="voucherPage();">
+            <a class="c-sidebar-nav-link" style="cursor: pointer;color: #54595f;background: #FFFFFF; " onclick="voucherPage();">
             <img src="{{ asset('image/voucher.png') }}"class="mr-1" alt=""> Voucher
             </a>
         </li>
 </ul>
-<button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
 </div>
 
 <script>

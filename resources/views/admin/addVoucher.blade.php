@@ -37,13 +37,13 @@
             </div>
             <div class="card-body">
                 <label class="label-add" for="exampleFormControlInput1">Nama Produk</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
+                <input type="name" class="form-control" id="exampleFormControlInput1">
                 <label class="label-add" for="exampleFormControlInput1">Deskripsi Produk</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
+                <input type="name" class="form-control" id="exampleFormControlInput1">
                 <label class="label-add" for="exampleFormControlInput1">Kategori Produk</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
+                <input type="name" class="form-control" id="exampleFormControlInput1">
                 <label class="label-add" for="exampleFormControlInput1">Stok</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
+                <input type="name" class="form-control" id="exampleFormControlInput1">
             </div>
         </div>  
       <div class="modal-footer">

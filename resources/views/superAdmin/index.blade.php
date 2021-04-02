@@ -71,10 +71,7 @@
         </div>
     </div>
     
-    <script src="https://coreui.io/demo/free/3.4.0/vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
-    <!--[if IE]><!-->
-    <script src="https://coreui.io/demo/free/3.4.0/vendors/@coreui/icons/js/svgxuse.min.js"></script>
-    <!--<![endif]-->
+    
     
     @include('../component.scriptChart')
 

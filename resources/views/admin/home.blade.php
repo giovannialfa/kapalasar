@@ -11,43 +11,16 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="title-content mb-3">Riwayat Transaksi</div>
-                                        <!-- <div class="row">
-                                        <div class="col">
-                                            Pencarian
-                                            <form class="form-inline md-form form-sm mt-0 " style="width: 30vh; height:5vh" >        
-                                                <i class="fas fa-search" aria-hidden="true"></i>
-                                                <input class="form-control form-control-sm ml-3 " id="input-search" type="text" placeholder="Cari berdasarkan id, nama, dll" aria-label="Search" >
-                                            </form>   
-                                        </div>
-                                        <div class="col ">
-                                            Filter Waktu
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" style="width: 30vh; height:5vh">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            Filter Berdasarkan
-                                            <select name="" id="filterDashboard" style="width: 30vh; height:5vh">
-                                                <option value="">asdas</option>
-                                            </select>
-                                        </div>
-                                        <div class="col">
-                                            Urut Berdasarkan
-                                            <select name="" id="sortBy" style="width: 30vh; height:5vh">
-                                                <option value="">aaa</option>
-                                            </select>
-                                        </div>
-                                    </div> -->
+                                        
                                 </div>
-                                <table class="table table-responsive-sm table-striped mydatatable ml-1 mr-1">
-                                <div class="card-body">
-                                    <thead>
-                                        <tr>
-                                            <th>Id Transaksi</th>
-                                            <th>Tanggal</th>
-                                            <th>Nama Pembeli</th>
+                                <div class="mb-3">
+
+                                    <table class="table table-responsive-sm table-bordered table-striped table-sm mydatatable">
+                                        <thead>
+                                            <tr>
+                                                <th>Id Transaksi</th>
+                                                <th>Tanggal</th>
+                                                <th>Nama Pembeli</th>
                                             <th>Alamat Pembeli</th>
                                             <th>Merchant</th>
                                             <th>Total Harga</th>
@@ -82,13 +55,25 @@
                                             </td>
                                         </tr>
                                     </tbody>
+                                </div>
                                 </table>
-                        @include('../admin.detailTransaksi')<div id="container"></div>
-                    <figure class="highcharts-figure">
-                        <p class="highcharts-description">
-                           
-                        </p>
-                    </figure>
+                                @include('../admin.detailTransaksi')
+                                <div class="card mt-3">
+                                    <div class="card-header">
+                                        Detail Transaksi
+                                    </div>
+                                    <div id="container" style="width: 100%;">
+                                        <canvas id="canvas"></canvas>
+                            </div>
+                            <div class="d-flex justify-content-around">
+                                <button class="button" style="width:15%" id="randomizeData" >Randomize Data</button>
+                                <button class="button" style="width:15%" id="addDataset">Add Dataset</button>
+                                <button class="button" style="width:15%" id="removeDataset">Remove Dataset</button>
+                                <button class="button" style="width:15%" id="addData">Add Data</button>
+                                <button class="button" style="width:15%" id="removeData">Remove Data</button>
+                            </div>
+                        </div>
+
                             </div>
                         </div>
                     </div>
@@ -165,32 +150,8 @@
                     </figure>
                 </div>
             </div> -->
-<script>
-    const chart = Highcharts.chart('container', {
-    title: {
-        text: 'Grafik Transaksi'
-    },
-    yAxis:{
-        title:{
-            text: 'Penjualan'
-        }
-    },
-    xAxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        title:{
-            text: 'bulan'
-        }
-    },
-    series: [{
-        type: 'column',
-        colorByPoint: true,
-        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-        showInLegend: false
-    }]
-});
-
-
-</script>
+            
+        @include('../component.scriptChart')
 <script>
 $(document).ready( function () {
     $('.mydatatable').DataTable();

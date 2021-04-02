@@ -1,21 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-        @include('../component.sidebarSuper')=
+        @include('../component.sidebarSuper')
             @include('../component.header', ['header_title' => 'Admin'])
-            <div class="c-body mt-2">
+            <div class="c-body">
                 <div class="container-fluid">
                     <div class="fade-in">
                         <div class="row">
                             <div class="col">
                                 <div class="card">
-                                    <div class="card-header">
-                                        <div class="title-content mb-3">List Admin</div>
+                                    <div class="card-header mb-3">
+                                        <div class="title-content">List Admin</div>
+                                    </div>
                                         <div class="col-md-3 offset-md-9 button-position">
                                 <button class="button-add" data-toggle="modal" data-target="#addModal">Tambah Admin</button>
                             </div>
-                                        <table class="table table-responsive-sm table-striped mydatatable ml-1 mr-1">
-                                <div class="card-body">
+                                        <table class="table table-responsive-sm table-bordered table-striped table-sm mydatatable">
                                     <thead>
                                         <tr>
                                             <th>Id Admin</th>
@@ -56,7 +56,6 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                    </div>
                                 </div>
                                 @include('admin.addProduct')
                             </div>

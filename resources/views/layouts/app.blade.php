@@ -9,8 +9,10 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    
+    <!-- coreUI -->
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -36,17 +38,17 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
     <!-- chart -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
-
-    <!-- coreUI -->
-    <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
+    <script src="https://www.chartjs.org/dist/2.9.4/Chart.min.js"></script>
     
+    <script type="text/javascript" src="{{ asset('js/utils.min.js') }}"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css">
 </head>
 <script src="https://unpkg.com/feather-icons"></script>
 <body>
     <div class="c-app">
-        <main style="height: 100%;">
             @yield('content')
-        </main>
     </div>
     <script
   src="https://code.jquery.com/jquery-3.6.0.js"
@@ -66,9 +68,14 @@
 
 <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.7/js/responsive.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.7/js/responsive.bootstrap4.min.js"></script>
 
+    <script src="{{ asset('js/app.js') }}" defer></script>
 <!-- coreUI -->
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
+<script src="https://coreui.io/demo/free/3.4.0/vendors/@coreui/chartjs/js/coreui-chartjs.bundle.js"></script>
+<script src="https://coreui.io/demo/free/3.4.0/js/charts.js"></script>
 </body>
 </html>

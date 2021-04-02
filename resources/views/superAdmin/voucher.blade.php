@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-        @include('component.sidebar')
+        @include('component.sidebarSuper')
             @include('component.header')
             <div class="c-body mt-2">
+                <main class="c-main">
                 <div class="container-fluid">
                     <div class="fade-in">
                         <div class="row">
@@ -15,7 +16,7 @@
                                 <button class="button-add" data-toggle="modal" data-target="#addModal">Tambah Produk</button>
                             </div>
                                         <table class="table table-responsive-sm table-striped mydatatable ml-1 mr-1">
-                                <div class="card-body">
+                             
                                     <thead>
                                         <tr>
                                             <th>Id Voucher</th>
@@ -77,6 +78,7 @@
                     </div>
                 </div>
                 @include('superAdmin.deleteVoucher')
+                </main>
             </div>
             <!-- <div class="d-flex justify-content-between ml-4 mt-3">
                 <div class="mr-3" style="flex: 8;border-radius: 1em;">

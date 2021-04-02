@@ -40,7 +40,6 @@
                                     </div> -->
                                 </div>
                                 <table class="table table-responsive-sm table-striped mydatatable ml-4 mr-4 ">
-                                <div class="card-body">
                                     <thead>
                                         <tr>
                                             <th>Id Transaksi</th>
@@ -81,12 +80,22 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                        @include('../admin.detailTransaksi')<div id="container"></div>
-                    <figure class="highcharts-figure">
-                        <p class="highcharts-description">
-                           
-                        </p>
-                    </figure>
+                        @include('../admin.detailTransaksi')
+                        <div class="card mt-3">
+                                    <div class="card-header">
+                                        Detail Transaksi
+                                    </div>
+                                    <div id="container" style="width: 100%;">
+                                        <canvas id="canvas"></canvas>
+                            </div>
+                            <div class="d-flex justify-content-around">
+                                <button class="button" style="width:15%" id="randomizeData" >Randomize Data</button>
+                                <button class="button" style="width:15%" id="addDataset">Add Dataset</button>
+                                <button class="button" style="width:15%" id="removeDataset">Remove Dataset</button>
+                                <button class="button" style="width:15%" id="addData">Add Data</button>
+                                <button class="button" style="width:15%" id="removeData">Remove Data</button>
+                            </div>
+                        </div>
                             </div>
                         </div>
                     </div>
@@ -163,32 +172,8 @@
                     </figure>
                 </div>
             </div> -->
-<script>
-    const chart = Highcharts.chart('container', {
-    title: {
-        text: 'Grafik Transaksi'
-    },
-    yAxis:{
-        title:{
-            text: 'Penjualan'
-        }
-    },
-    xAxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        title:{
-            text: 'bulan'
-        }
-    },
-    series: [{
-        type: 'column',
-        colorByPoint: true,
-        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-        showInLegend: false
-    }]
-});
+            @include('../component.scriptChart')
 
-
-</script>
 <script>
 $(document).ready( function () {
     $('.mydatatable').DataTable();

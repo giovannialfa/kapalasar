@@ -15,7 +15,6 @@
                                 <button class="button-add" data-toggle="modal" data-target="#addModal">Tambah Produk</button>
                             </div>
                                         <table class="table table-responsive-sm table-striped mydatatable ml-1 mr-1">
-                                <div class="card-body">
                                     <thead>
                                         <tr>
                                             <th>Id Voucher</th>

@@ -1,7 +1,7 @@
 <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
-
-<ul class="c-sidebar-nav">
-    <li class="c-sidebar-nav-item mb-5"><a class="c-sidebar-nav-link" style="cursor: pointer;" onclick="homePage()"></a>
+                                    
+                                    <ul class="c-sidebar-nav">
+                                        <li class="c-sidebar-nav-item mb-5"><a class="c-sidebar-nav-link" style="cursor: pointer;" onclick="homePage()"></a>
     <img src="{{ asset('image/homeDashboard.png') }}" style="cursor: pointer;" onclick="homePage()" style="cursor: pointer;" alt="" class="logoKapalasar">
     </li>
     <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link"  style="cursor: pointer;" onclick="homePage()">

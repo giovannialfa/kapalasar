@@ -9,13 +9,14 @@
                         <div class="row">
                             <div class="col">
                                 <div class="card">
-                                    <div class="card-header mb-3">
-                                        <div class="title-content">List Merchant</div>
+                                <div class="card-header mb-3 d-flex justify-content-between">
+                                        <div class="title-content">List Merchant
                                     </div>
-                                        <div class="col-md-3 offset-md-9 button-position mb-1">
-                                <button class="button-add" data-toggle="modal" data-target="#addModal">Tambah Produk</button>
-                            </div>
-                                        <table class="table table-responsive-sm table-bordered table-striped table-sm mydatatable">
+                                            <div>
+                                        <button class="button-add" data-toggle="modal" data-target="#addModal">Tambah Merchant</button>
+                                        </div>
+                                    </div>
+                                        <table class="table table-responsive table-bordered table-striped table-sm mydatatable">
                                     <thead>
                                         <tr>
                                             <th>Id Merchant</th>

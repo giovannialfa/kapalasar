@@ -15,7 +15,7 @@
                                 </div>
                                 <div class="mb-3">
 
-                                    <table class="table table-responsive-sm table-bordered table-striped table-sm mydatatable">
+                                    <table class="table table-responsive table-bordered table-striped table-sm mydatatable">
                                         <thead>
                                             <tr>
                                                 <th>Id Transaksi</th>

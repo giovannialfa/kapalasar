@@ -380,3 +380,8 @@ div {
 
     color: #ffffff;
 }
+.page-item.active .page-link {
+    background-color: #a6cb26 !important;
+    border: 1px solid black;
+    border: #a6cb26;
+}

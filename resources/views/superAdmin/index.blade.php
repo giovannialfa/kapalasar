@@ -15,7 +15,7 @@
                         <div class="title-content">Riwayat Transaksi</div>
                         </div>
                                     <div class="card-body">
-                                        <table class="table table-responsive-sm table-bordered table-striped table-sm mydatatable">
+                                        <table class="table table-responsive table-bordered table-striped table-sm mydatatable">
                                             <thead>
                                                 <tr>
                                                     <th>Id Transaksi</th>

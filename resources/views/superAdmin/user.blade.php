@@ -11,10 +11,8 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="title-content mb-3">List User</div>
-                                        <div class="col-md-3 offset-md-9 button-position">
-                                <button class="button-add" data-toggle="modal" data-target="#addModal">Tambah User</button>
-                            </div>
-                                        <table class="table table-responsive-sm table-striped mydatatable ml-1 mr-1">
+                                        
+                                        <table class="table table-responsive table-striped mydatatable ml-1 mr-1">
                                     <thead>
                                         <tr>
                                             <th>Id Merchant</th>

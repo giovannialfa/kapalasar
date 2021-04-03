@@ -12,7 +12,11 @@
     
     <!-- coreUI -->
     <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
+    <link rel="manifest" href="https://coreui.io/demo/free/3.4.0/assets/favicon/manifest.json">
+    <link rel="stylesheet" href="https://coreui.io/demo/free/3.4.0/css/style.css">
+
     <!-- Scripts -->
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -35,6 +39,7 @@
     <link href="{{ asset( 'css/chart.css' ) }}" rel="stylesheet">
     <link href="{{ asset( 'css/owl.carousel.min.css' ) }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6db64e772e.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
     <!-- chart -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -77,5 +82,8 @@
 <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
 <script src="https://coreui.io/demo/free/3.4.0/vendors/@coreui/chartjs/js/coreui-chartjs.bundle.js"></script>
 <script src="https://coreui.io/demo/free/3.4.0/js/charts.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
 </body>
 </html>

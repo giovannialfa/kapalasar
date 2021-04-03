@@ -1,7 +1,8 @@
 <div class="c-wrapper c-fixed-components">
-    <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+    <header class="c-header c-header-light c-header-fixed">
+
         <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
-            <svg class="c-icon c-icon-lg">
+            <svg class="c-icon c-icon-lg" style="background:black;">
             <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
         </svg>
     </button>

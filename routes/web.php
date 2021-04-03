@@ -66,3 +66,6 @@ Route::get('/super-produk', function() {
 Route::get('/super-voucher', function() {
     return view('superAdmin.voucher');
 });
+Route::get('/super-flashsale', function () {
+    return view('superAdmin.flashsale');
+});

@@ -27,6 +27,7 @@
         <img src="{{ asset('image/voucher.png') }}"class="mr-1" alt=""> Voucher
     </a>
 </li>
+
 </ul>
 </div>
 
@@ -48,5 +49,8 @@
     }
     function userPage(){
         window.location.href = "{{ URL::to('super-user') }}";
-                                }
-                                </script>
+    }
+</script>
+<script>
+    
+</script>

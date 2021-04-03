@@ -18,6 +18,11 @@
             <img src="{{ asset('image/voucher.png') }}"class="mr-1" alt=""> Voucher
             </a>
         </li>
+        <li class="c-sidebar-nav-item">
+            <a class="c-sidebar-nav-link" style="cursor: pointer;color: #54595f;background: #FFFFFF; " onclick="flashsalePage();">
+            <img src="{{ asset('image/voucher.png') }}"class="mr-1" alt=""> Flash Sale
+            </a>
+        </li>
 </ul>
 </div>
 
@@ -31,5 +36,8 @@
     }
     function voucherPage(){
         window.location.href = "{{ URL::to('voucher') }}";
+    }
+    function flashsalePage(){
+        window.location.href = "{{ URL::to('flashsale') }}";
     }
 </script>

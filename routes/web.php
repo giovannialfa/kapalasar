@@ -29,6 +29,9 @@ Route::get('/produk', function () {
 Route::get('/voucher', function () {
     return view('admin.voucher');
 });
+Route::get('/flashsale', function () {
+    return view('admin.flashsale');
+});
 
 // Merchant
 Route::get('/merchant-home', function () {

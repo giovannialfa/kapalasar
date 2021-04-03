@@ -385,3 +385,6 @@ div {
     border: 1px solid black;
     border: #a6cb26;
 }
+.clsDatePicker {
+    z-index: 100000;
+}
